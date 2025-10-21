@@ -18,12 +18,12 @@ Teknik Instrumentasi - Institut Teknologi Sepuluh Nopember
 
 ## 📋 Key Features
 
-**Rust-Based Firmware**: Developed using Rust for its memory safety, high concurrency, and performance, ensuring robust and reliable industrial communication.
-**Hardware-in-the-Loop Simulation**: Integrates a physical SHT20 Modbus RTU sensor with a DWSIM AC process simulation in a closed loop. Live temperature and humidity data dynamically drive the simulation.
-**Bidirectional Control**: The system is not just for monitoring. It uses the output from the DWSIM simulation to control physical actuators (a fan and a pump), mimicking a real-world control system.
-**Real-Time IoT Dashboard**: All sensor and simulation data is published to an MQTT broker and visualized in real-time on the ThingsBoard platform.
-**Time-Series Data Storage**: Uses InfluxDB for high-performance storage and querying of all time-series data, enabling historical analysis.
-**Industrial Protocol Support**: Utilizes the robust Modbus RTU protocol for communication between the ESP32-S3 and the industrial-grade SHT20 sensor.
+* **Rust-Based Firmware**: Developed using Rust for its memory safety, high concurrency, and performance, ensuring robust and reliable industrial communication.
+* **Hardware-in-the-Loop Simulation**: Integrates a physical SHT20 Modbus RTU sensor with a DWSIM AC process simulation in a closed loop. Live temperature and humidity data dynamically drive the simulation.
+* **Bidirectional Control**: The system is not just for monitoring. It uses the output from the DWSIM simulation to control physical actuators (a fan and a pump), mimicking a real-world control system.
+* **Real-Time IoT Dashboard**: All sensor and simulation data is published to an MQTT broker and visualized in real-time on the ThingsBoard platform.
+* **Time-Series Data Storage**: Uses InfluxDB for high-performance storage and querying of all time-series data, enabling historical analysis.
+* **Industrial Protocol Support**: Utilizes the robust Modbus RTU protocol for communication between the ESP32-S3 and the industrial-grade SHT20 sensor.
 
 ---
 
