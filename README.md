@@ -31,7 +31,7 @@ Teknik Instrumentasi - Institut Teknologi Sepuluh Nopember
 
 [cite_start]The system is orchestrated by an **ESP32-S3 microcontroller**, which acts as the central hub[cite: 84]. [cite_start]It acquires data from the **SHT20 sensor** via Modbus RTU, communicates with the **DWSIM** simulation over Wi-Fi (via a Python API), and controls the physical fan and pump[cite: 85, 86, 87]. [cite_start]Simultaneously, it publishes all data to an **MQTT Broker**, which then forwards it to **InfluxDB** for storage and **ThingsBoard** for visualization[cite: 88, 89].
 
-![alt text](https://github.com/atok99/ESP32-S3_ModbusRTU_Integred-with-DWSIM-Simulation/blob/main/System Architectur #1.png?raw=true)
+![alt text](https://github.com/atok99/ESP32-S3_ModbusRTU_Integred-with-DWSIM-Simulation/blob/main/SystemArchitectur#1.png?raw=true)
 
 *Figure 1: System Architecture and Data Flow*
 
