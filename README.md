@@ -1,17 +1,18 @@
 # Intelligent Rust-Based ESP32 System for Real-Time IoT and Process Simulation
-
-## 👨‍💻 Author
-1. Rizal Khoirul Atok (2042231013)
-2. Naufal Faqiih Ashshiddiq (2042231068)
-3. Ahmad Radhy (Supervisor
-
-Teknik Instrumentasi - Institut Teknologi Sepuluh Nopember
-
 ---
 
 This repository contains the work for the research paper: **"Development of an Intelligent Rust-Based Embedded System for SHT20 Modbus RTU and DWSIM AC Simulation Integration with Real-Time IoT Connectivity"**.
 
 The project presents a smart, reliable embedded system built on the ESP32-S3 microcontroller and programmed entirely in **Rust**. It bridges the gap between physical industrial sensors and virtual process simulations by creating a real-time, "hardware-in-the-loop" environment. The system monitors an air conditioning (AC) process, uses live sensor data to drive a thermodynamic simulation in DWSIM, and visualizes all data on a modern IoT platform.
+
+---
+
+## 👨‍💻 Author
+1. Rizal Khoirul Atok (2042231013)
+2. Naufal Faqiih Ashshiddiq (2042231068)
+3. Ahmad Radhy (Supervisor)
+
+Teknik Instrumentasi - Institut Teknologi Sepuluh Nopember
 
 ---
 
