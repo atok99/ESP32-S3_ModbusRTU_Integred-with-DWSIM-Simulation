@@ -50,7 +50,7 @@ Teknik Instrumentasi - Institut Teknologi Sepuluh Nopember
 
 ### Wiring Diagram
 
-
+![alt text](https://github.com/atok99/ESP32-S3_ModbusRTU_Integred-with-DWSIM-Simulation/blob/main/Wiring_diagram.png?raw=true)
 *Figure 2: Hardware Wiring Diagram*
 
 ---
@@ -78,26 +78,29 @@ The system operates in a continuous, real-time loop, bridging the physical and v
 ### 1. Real-Time Data Acquisition
 The system reads temperature and humidity from the SHT20 sensor. [cite_start]This live data is then immediately sent to update the DWSIM simulation's `Air_In` parameter[cite: 175].
 
-
+![alt text](https://github.com/atok99/ESP32-S3_ModbusRTU_Integred-with-DWSIM-Simulation/blob/main/SHT20toDWSIM.png?raw=true)
 *Figure 4: Terminal log showing SHT20 data being sent to DWSIM*
 
 ### 2. Thermodynamic Simulation
 [cite_start]With the updated `Air_In` value (e.g., **32.4°C**), DWSIM runs its thermodynamic calculations and computes the cooled `Air_Out` temperature (e.g., **11.977°C**)[cite: 205, 207].
 
-
+![alt text](https://github.com/atok99/ESP32-S3_ModbusRTU_Integred-with-DWSIM-Simulation/blob/main/DWSIM_Calculation.png?raw=true)
 *Figure 5: DWSIM calculating the output temperature*
 
 ### 3. Data Transmission to IoT Platforms
 [cite_start]The calculated `Air_Out` value is retrieved from DWSIM and uploaded via MQTT to InfluxDB and ThingsBoard, completing the data loop[cite: 214, 215].
 
-
+![alt text](https://github.com/atok99/ESP32-S3_ModbusRTU_Integred-with-DWSIM-Simulation/blob/main/UploadtoInfluxdb.png?raw=true)
 *Figure 6: Terminal log confirming data upload to InfluxDB and ThingsBoard*
 
 ### 4. Data Aggregation and Visualization
 [cite_start]All data streams are aggregated in the InfluxDB database and visualized in the ThingsBoard dashboard, providing a complete overview of both the physical and simulated parameters[cite: 242, 244].
 
-
+![alt text](https://github.com/atok99/ESP32-S3_ModbusRTU_Integred-with-DWSIM-Simulation/blob/main/Influxdb.png?raw=true)
 *Figure 7: Time-series data from all sources in InfluxDB*
+
+![alt text](https://github.com/atok99/ESP32-S3_ModbusRTU_Integred-with-DWSIM-Simulation/blob/main/Thingsboard.png?raw=true)
+*Figure 8: Thingsboard data real-time*
 
 ---
 
