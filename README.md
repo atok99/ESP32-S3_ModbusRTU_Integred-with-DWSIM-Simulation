@@ -61,7 +61,8 @@ The system's logic is divided between the embedded firmware and the process simu
 
 **Embedded Firmware**: Written entirely in **Rust**. It handles polling the sensor, communicating with the DWSIM API, controlling the relays, and publishing data via MQTT.
 **Process Simulation**: A **DWSIM** model of a Heat Exchanger simulates the AC cooling coil. The `Air_In` temperature is updated by the SHT20 sensor, and DWSIM calculates the resulting `Air_Out` temperature.
-    
+
+    ![alt text](https://github.com/atok99/ESP32-S3_ModbusRTU_Integred-with-DWSIM-Simulation/blob/main/DWSIM.png?raw=true)
     *Figure 3: DWSIM Heat Exchanger Model*
 **API Bridge**: A **Python script** exposes the DWSIM simulation as a REST API, allowing the ESP32-S3 to interact with it over the network.
 **Backend & IoT Platform**:
